@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -216,7 +216,7 @@ input:focus, select:focus, textarea:focus{
 	box-shadow: 0 0 0 0.09em currentColor;
 }
 
-input:error, select:error, textarea:error{
+input:invalid, select:invalid, textarea:invalid{
 	background-color: #c71819;
 }
 
@@ -258,7 +258,7 @@ textarea{
 	width: 90%;
 	min-height: 120px;
 	margin: 0.25em auto 0.5em auto;
-	padding: 0.75;
+	padding: 0.75em;
 }
 
 input[type="radio"]{
