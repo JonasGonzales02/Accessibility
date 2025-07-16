@@ -51,7 +51,7 @@ table {
 
 *{
 	font-family: sans-serif;
-	line-height: 1.35;
+	line-height: 1.5;
 }
 
 #skipLink{
@@ -175,11 +175,15 @@ h3{
 
 form{
 	width: 90%;
-	max-width: 350px;
+	max-width: 600px;
 	margin:  2em auto;
-	padding:  0.75em;
-	border: 2px solid #777;
-	border-radius: 0.2em;
+  padding: 1em;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.form-group {
+    margin-bottom: 1.5em;
+  padding: 0.5em;
 }
 
 input, label, textarea{
@@ -217,22 +221,24 @@ input:error, select:error, textarea:error{
 }
 
 fieldset{
-	margin: 0.5em auto;
-	padding-bottom: 0.5em;
-	width: 94%;
+	margin: 1em 0;
+	padding: 1.5em;
 	border: 1px solid #222;
-	border-radius: 0.2em;
-	display: grid;
-	grid-template-columns: 30px 1fr 30px 1fr;
+	border-radius: 8px;
+  background: #f9f9f9;
 }
 
 legend{
-	padding: 1.5em;
+	padding: 0 1em;
+  font-weight: bold;
+  color: #0a58ff;
 }
 
 fieldset label{
-	display: inline;
-	width: 60%;
+	display: inline-block;
+	width: auto;
+  margin-left: 0.5em;
+  vertical-align:middle;
 }
 
 fieldset input{
@@ -249,29 +255,32 @@ select{
 }
 
 textarea{
-	width: 70%;
-	height: 100px;
+	width: 90%;
+	min-height: 120px;
 	margin: 0.25em auto 0.5em auto;
-	padding: 0.5em;
+	padding: 0.75;
 }
 
 input[type="radio"]{
-	margin-top: 0.4em;
+	margin-top: .5em;
 	outline: none;
 	border: 1px solid #222;
-	border-radius: 25%;
+  width: 1em;
 }
 
-input[type="submit"]{
+input[type="submit"] {
 	font-size: 1.2em;
-	width: 95%;
+	width: 100%;
 	margin-top: 1em;
-	padding: 0.5em;
+	padding: 0.75em;
 	border: none;
 	outline: none;
 	border-radius: 0.2em;
 	background-color: #0a58ff;
 	color: white;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  
 }
 
 input[type="submit"]:hover, input[type="submit"]:focus{
