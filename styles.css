@@ -268,7 +268,7 @@ input[type="radio"]{
   width: 1em;
 }
 
-input[type="submit"] {
+button[type="submit"] {
 	font-size: 1.2em;
 	width: 100%;
 	margin-top: 1em;
@@ -283,7 +283,7 @@ input[type="submit"] {
   
 }
 
-input[type="submit"]:hover, input[type="submit"]:focus{
+button[type="submit"]:hover, button[type="submit"]:focus{
 	background-color: #063599;
 	filter: drop-shadow(8px 8px 4px #777);
 }
