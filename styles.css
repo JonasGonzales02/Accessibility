@@ -278,8 +278,8 @@ input[type="submit"] {
 	border-radius: 0.2em;
 	background-color: #0a58ff;
 	color: white;
-  font-weight: bold;
-  transition: all 0.2s ease;
+  	font-weight: bold;
+  	transition: all 0.2s ease;
   
 }
 
