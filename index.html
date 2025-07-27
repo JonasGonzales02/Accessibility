@@ -29,31 +29,20 @@
 			<form id="contact-form" method="POST" action="https://wp.zybooks.com/form-viewer.php">
 			<fieldset>
 				<legend>Contact Information</legend>
-				<div class="form-group">
 					<label for="Fullname">Full Name (First and Last)<span class="required">*</span></label>
 					<input type="text" id="Fullname" name="fullanme" aria-required="true">
-				</div>
-				<div class="form-group">
 					<label for="phone">Phone Number</label>
 					<input type="tel" id="phone" name="phone">
-				</div>
-				<div class="from-group">
 					<label for="email">Email Address<span class="required">*</span></label>
 					<input type="email" id="email" name="email" aria-required="true">
-				</div>
-				<fieldset class="form-group">
+				<fieldset>
 					<legend>Preferred Contact Method<span class="required">*</span></legend>
-					<div>
 						<input type="radio" id="contact-email" name="contact_method" value="email" aria-required="true">
 						<label for="contact-email">Email</label>
-					</div>
-					<div>
 						<input type="radio" id="contact-phone" name="contact_method" value="phone">
 						<label for="contact-phone">Phone</label>
-						</div>
 				</fieldset>
 
-				<div class="form-group">
                         <label for="state">State of Residence <span class="required">*</span></label>
                         <select id="state" name="state" aria-required="true">
                             <option value="">Select a state</option>
@@ -108,12 +97,8 @@
                             <option value="WI">Wisconsin</option>
                             <option value="WY">Wyoming</option>
                         </select>
-                    </div>
-					<div class="form-group">
 						<label for="comments">Comments</label>
 						<textarea id="comments" name="comments" rows="4"></textarea>
-					</div>
-					<div class="form-group">
 						<button type="submit">Submit</button>
 					</div>
 			</fieldset>
