@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/
+/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -51,7 +51,7 @@ table {
 
 *{
 	font-family: sans-serif;
-	line-height: 1.5;
+	line-height: 1.35;
 }
 
 #skipLink{
@@ -175,15 +175,11 @@ h3{
 
 form{
 	width: 90%;
-	max-width: 600px;
+	max-width: 350px;
 	margin:  2em auto;
-  padding: 1em;
-  background: white;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-.form-group {
-    margin-bottom: 1.5em;
-  padding: 0.5em;
+	padding:  0.75em;
+	border: 2px solid #777;
+	border-radius: 0.2em;
 }
 
 input, label, textarea{
@@ -216,34 +212,32 @@ input:focus, select:focus, textarea:focus{
 	box-shadow: 0 0 0 0.09em currentColor;
 }
 
-input:invalid, select:invalid, textarea:invalid{
+input:error, select:error, textarea:error{
 	background-color: #c71819;
 }
 
 fieldset{
-	margin: 1em 0;
-	padding: 1.5em;
+	margin: 0.5em auto;
+	padding-bottom: 0.5em;
+	width: 94%;
 	border: 1px solid #222;
-	border-radius: 8px;
-  background: #f9f9f9;
+	border-radius: 0.2em;
+	display: grid;
+	grid-template-columns: 30px 1fr 30px 1fr;
 }
 
 legend{
-	padding: 0 1em;
-  font-weight: bold;
-  color: #0a58ff;
+	padding: 0.5em;
 }
 
 fieldset label{
-	display: inline-block;
-	width: auto;
-  margin-left: 0.5em;
-  vertical-align:middle;
+	display: inline;
+	width: 60%;
 }
 
 fieldset input{
 	display: inline;
-	width: 400px;
+	width: 20px;
 }
 
 select{
@@ -256,34 +250,31 @@ select{
 
 textarea{
 	width: 90%;
-	min-height: 120px;
+	height: 100px;
 	margin: 0.25em auto 0.5em auto;
-	padding: 0.75em;
+	padding: 0.5em;
 }
 
 input[type="radio"]{
-	margin-top: .5em;
+	margin-top: 0.4em;
 	outline: none;
 	border: 1px solid #222;
-  width: 1em;
+	border-radius: 25%;
 }
 
-button[type="submit"] {
+input[type="submit"]{
 	font-size: 1.2em;
-	width: 100%;
+	width: 95%;
 	margin-top: 1em;
-	padding: 0.75em;
+	padding: 0.5em;
 	border: none;
 	outline: none;
 	border-radius: 0.2em;
 	background-color: #0a58ff;
 	color: white;
-  	font-weight: bold;
-  	transition: all 0.2s ease;
-  
 }
 
-button[type="submit"]:hover, button[type="submit"]:focus{
+input[type="submit"]:hover, input[type="submit"]:focus{
 	background-color: #063599;
 	filter: drop-shadow(8px 8px 4px #777);
 }
